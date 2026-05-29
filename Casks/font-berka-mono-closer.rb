@@ -7,6 +7,11 @@ cask "font-berka-mono-closer" do
   desc "Iosevka custom build with a calm, wide, rectangular coding texture"
   homepage "https://github.com/vinitkumar/berka-mono-closer"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   font "BerkaMonoCloser-Bold.ttf"
   font "BerkaMonoCloser-BoldItalic.ttf"
   font "BerkaMonoCloser-Italic.ttf"
